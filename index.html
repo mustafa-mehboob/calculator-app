@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+</head>
+<body>
+    
+
+    <div class="container">
+        <p style="color: red; " id="error"></p>
+        <div class="display">
+            <input id="screen" type="text" placeholder="0" disabled>
+        </div>
+
+        <div class="btns">
+            <div class="row">
+                <button id="ce" onclick="backspc()">CE</button>
+                <button onclick="getValue('(')">(</button>
+                <button onclick="getValue(')')">)</button>
+                <button onclick="getValue('%')">%</button>
+                <button id="ac" onclick="screen.value=''">AC</button>
+            </div>
+
+            <div class="row">
+                <button onclick="getValue(7)">7</button>
+                <button onclick="getValue(8)">8</button>
+                <button onclick="getValue(9)">9</button>
+                <button onclick="getValue('/')">÷</button>
+            </div>
+
+            <div class="row">
+                <button onclick="getValue(4)">4</button>
+                <button onclick="getValue(5)">5</button>
+                <button onclick="getValue(6)">6</button>
+                <button onclick="getValue('*')">×</button>
+            </div>
+
+            <div class="row">
+                <button onclick="getValue(1)">1</button>
+                <button onclick="getValue(2)">2</button>
+                <button onclick="getValue(3)">3</button>
+                <button onclick="getValue('-')">-</button>
+            </div>
+
+            <div class="row">
+                <button onclick="getValue(0)">0</button>
+                <button onclick="getValue('.')">.</button>
+                <button id="eval" onclick="sum()">=</button>
+                <button onclick="getValue('+')">+</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body> 
+</html>
